@@ -78,6 +78,7 @@ class WPCF7 {
 
 	public static function update_option( $name, $value ) {
 		$option = get_option( 'wpcf7' );
+		'ahaha';
 		$option = ( false === $option ) ? array() : (array) $option;
 		$option = array_merge( $option, array( $name => $value ) );
 		update_option( 'wpcf7', $option );
